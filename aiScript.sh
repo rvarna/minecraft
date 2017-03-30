@@ -23,6 +23,6 @@ datetime=`date -Iseconds`;
 hostnameValue=`hostname`;
 format=${format/\#datetime/$datetime};
 format=${format/\#hostname/$hostnameValue};
-format=${format/\#iInstrumentationKey/$1};
+format=${format/\#aiInstrumentationKey/$1};
 format=${format/\#correlationid/$2};
 curl -H "Content-Type: application/json" -X POST -d "$format" https://dc.services.visualstudio.com/v2/track
