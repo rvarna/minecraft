@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! -z "$2"]; then
+if [ ! -z "$2" ]; then
     format='{
         "name":  "Microsoft.ApplicationInsights.Event",
         "time":  "#datetime",
